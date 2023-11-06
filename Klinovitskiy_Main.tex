@@ -40,7 +40,12 @@
 
 \section{Глава №1 Обзор Литературы}
 
-\section{Глава №2 Vtune}
+\section{Глава №2 Компиляция кода Plasma}
+Воспользовавшись заготовкой кода из [48], в главе 9: Parallel programming; multithreading, MPI domain decomposition; GPU programming with CUDA, был получен скрипт на языке программирования С++. Данный скрипт был дописан процедурами замера времени выполнения и функцией выгрузки собранных данных в файл, для полчения расчетных данных используемых в дальнейшем в других скриптах.
+
+Планировалось, сравнить полученные данные с данными, полученными в программе Vtune, но сопровождение последней было приостановлено на территории РФ, посему данный момент был опущен.
+
+Про компиляции ряда исполняющих программ в один общий exe файл, возникали ошибки с прочтением директивы mpi.h, создающей конфликтные ситуации на системах Windows.
 
 \section{Научная, научно-техническая и практическая ценность}
 Практическая:
@@ -84,8 +89,8 @@
    - https://www.researchgate.net/publication/282301373_Exascale_Computing_and_Big_Data;
 
 10. М.А.Боронина, А.В.Снытников. Разработка высокомасштабируемого параллельного алгоритма для моделирования динамики плазмы.
-   //тезисы Международной конференции "Вычислительная и прикладная математика 2017".
-
+   //тезисы Международной конференции "Вычислительная и прикладная математика 2017";
+   
 11. A.V.Snytnikov.  Porting a Plasma Simulation PIC code from GPU cluster to a cluster built with Intel Xeon Phi accelerators./
    //в печати -  Parallel Computing.
 
@@ -192,6 +197,9 @@
    - Режим доступа: https://russianblogs.com/article/7542928214/;
 
 47. Thomas Sterling (computing) [Электронный ресурс].
-   - Режим доступа: https://en.m.wikipedia.org/wiki/Thomas_Sterling_(computing).
+   - Режим доступа: https://en.m.wikipedia.org/wiki/Thomas_Sterling_(computing);
+   
+48. Plasma Simulations by Example [Электронный ресурс].
+   - Режим доступа: https://www.particleincell.com/plasma-by-example/;
 
 \end{document}
