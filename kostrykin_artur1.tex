@@ -1,0 +1,231 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english,russian]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Анализ производительности оборудования супер ЭВМ на основе программы, реализующей метод частиц в ячейках в физике плазмы}
+\author{выполнил студент гр. 22 ВТм Кострыкин А.П.}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Дисертация описывает получение характеристик компонентов архитектуры ЭВМ на узлах Суперкомпьютера, именуемого далее супер ЭВМ, с последующем аналазом производительности кластеров супер ЭВМ, данный скрипт написан на языки Python, с последующем сохранение данных в 1С:Enterprise 8.3.
+\end{abstract}
+
+\section{Введение}
+Супер-ЭВМ (суперкомпьютеры) – это мощные вычислительные системы, специально разработанные для решения сложных и вычислительно интенсивных задач. Они предназначены для обработки больших объемов данных и выполнения сложных математических расчетов в кратчайшие сроки.
+
+Супер-ЭВМ используются в различных областях, где требуется обработка больших объемов данных и выполнение сложных вычислений. Кластеры находят применение в научных исследованиях, инженерных расчетах, финансовой аналитике, метеорологии, геномике, аэродинамике и многих других областях.
+
+Основное назначение Супер-ЭВМ – это обеспечение высокой производительности и скорости вычислений. Кластеры способны обрабатывать огромные объемы данных и выполнять сложные алгоритмы за короткое время. Это позволяет исследователям и инженерам получать результаты своих исследований и расчетов гораздо быстрее, чем при использовании обычных ЭВМ.
+
+\section{Актуальность}
+
+В настоящее время существует большое количество программ дя определения производительности супер ЭВМ: Linpack, HPCG, NAS Parallel benchmarks, SPEC Benchmarks, ECP Exascale Proxy Applications, Mantevo miniapps benchmarks. Кроме того, существуют оценки параллелльной масшабируемости и эффективности выcокопроизводительных ВС, например, в книге [7]. Все это многообразие показывает, что задача создания теста производительности остается актуальной. Так, тест High Performance Lapack создан на основе методов решения системы линейных уравнений с помощью LU-факторизации, тест HPCG - на основе метода сопряженных градиентов, NAS parallel benchmark ориентирован на решение задач гидродинамики.
+
+Конкуренция: В области высокопроизводительных вычислений существует конкуренция между различными производителями супер ЭВМ. Проверка производительности помогает определить, какая из моделей является наиболее эффективной и почему.
+
+Оптимизация ресурсов: Проверка производительности также помогает оптимизировать использование ресурсов супер ЭВМ. Если супер ЭВМ работает не на полную 
+мощность, то это означает, что ресурсы используются неэффективно. В таком случае, можно провести оптимизацию и улучшить производительность системы.
+
+Безопасность: В некоторых случаях, проверка производительности может помочь выявить уязвимости в системе безопасности супер ЭВМ, что позволяет принять меры по их устранению.
+
+Соответствие требованиям: Во многих случаях, использование супер ЭВМ регулируется различными стандартами и требованиями. Проверка производительности может гарантировать, что система соответствует этим требованиям.
+
+\section{Новизна}
+Постановка задачи о проведении тестирования суперЭВМ на основе метода частиц в ячейках является новой. Впервые реализуется возможность определения всех факторов, влияющих на производительность суперЭВМ на основе одного комплексного теста.
+
+\section{Обзор литературы}
+
+\section{Описание работы}
+
+\section{Глава №1 Компиляция кода вывода характеристик узла супер ЭВМ}
+Воспользовавшись библеотеками Python приведенные в [9-12] был написан скрипт, позволяющий сохранять ключевые характеристики узла кластера, а именно:
+а) тип процессора, количество ядер, размер кэша, тактовая частота;
+б) пропускная способность шины памяти;
+в) тип сетевого интерконнекта, его пропускная способность;
+В результате эти характеристики сохраняются в файл формата CSV.
+
+
+\section{Практическая ценность}
+Созданный в рамках данной работы комплексный тест позволит проводить экспериментальное исследование функционирования вычислительных машин, комплексов и компьютерных сетей в широком диапазоне от больших суперЭВМ до корпоративных серверов.
+\section{Заключение}
+В заключение можно положительно отозваться о точности и корректности прведеной работы. Акцентировать внимание на значимости сути проверки заявленных производителем мощностей, ввиду высокой степени важности корректности работы Суперкомпьютера в таких областях, как предсказания землетрясений, расшифровка ДНК и фармацевтика. А также, благодаря гибкости используемого подхода, открываются перспективы перехода с узконаправленного действия по Суперкомпьютерам в сторону обычных серверов или персональных компьютеров.
+
+\begin{thebibliography} {40}
+\bibitem{1}
+B.M. Glinskiy, I.M. Kulikov, I.G. Chernykh, A.V. Snytnikov, A.V. Sapetina, D.V. Weins.  The Integrated Approach to Solving Large-Size Physical Problems on Supercomputers.Принято к публикации в Communications in Computer and Information Science, изд-во Springer, 2017 г.;
+\bibitem{2}
+ М.А.Боронина, А.В.Снытников. Разработка высокомасштабируемого параллельного алгоритма для моделирования динамики плазмы;
+
+\bibitem{3} 
+A.V.Snytnikov.  Porting a Plasma Simulation PIC code from GPU cluster to a cluster built with Intel Xeon Phi accelerators./;
+
+\bibitem{4} 
+Статистика о производительности  супер ЭВМ [Электронный ресурс].- Режим доступа: https://www.top500.org/;
+
+\bibitem{5} 
+Введение в использование MPI [Электронный ресурс]. Режим доступа: http://nusc.nsu.ru/wiki/doku.php/doc/mpi/mpi
+
+\bibitem{6} 
+Glinskiy B., Kulikov I., Snytnikov A., et al. Co-design of parallel numerical methods for plasma physics and astrophysics. Supercomputing Frontier [Электронный реусурс]. Режим доступа: http://superfri.org/superfri/;
+
+\bibitem{7} 
+Академия. Эксафлоп/с: почему и как [Электронный ресурс].
+Режим доступа: \href{https://www.academia.edu/95135711/Exaflop_s_The_why_and_the_how}
+
+\bibitem{8} 
+Экзафлопсные вычисления и большие данные [Электронный реусурс]. Режим доступа: 
+https://www.researchgate.net/publication/282301373\_Exascale\_Computing\_and\_Big\_Data;
+
+\bibitem{09} 
+Библеотека Python os - Разные интерфейсы операционной системы [Электронный ресурс]. Режим доступа: https://translated.turbopages.org/proxy_u/en-ru.ru.4b04840d-651949ed-f730bcf4-74722d776562/https/docs.python.org/3.8/library/os.html;
+
+\bibitem{10} 
+Библеотека Python platform - Access to underlying platform’s identifying data [Электронный ресурс]. Режим доступа: https://docs.python.org/3/library/platform.html;
+
+\bibitem{11} 
+Библеотека Python socket - Low-level networking interface [Электронный ресурс]. Режим доступа: https://docs.python.org/3/library/socket.html
+
+\bibitem{12} 
+Библеотека Python subprocess - Subprocess management  [Электронный ресурс]. Режим доступа: https://docs.python.org/3/library/subprocess.html;
+
+\bibitem{13}
+Компьютерные системы и алгоритмы космической ситуационной осведомленности: история и будущее развитие [Электронный ресурс].
+Режим доступа: \href{https://www.academia.edu/47898656/Computer_Systems_and_Algorithms_for_Space_Situational_Awareness_History_and_Future_Development};
+
+\bibitem{14}
+Информация о запуске python- scripta из с++ [Электронный ресурс]. Режим доступа: https://ru.stackoverflow.com/questions/39243/
+
+\bibitem{15}
+Особенности работы на Супер ЭВМ кластера НГУ[Электронный ресурс]. Режим доступа: https://ssd.sscc.ru/sites/default/files/content/attach/343/pamyatka_po_ispolzovaniyu_klastera_v4.pdf
+
+\bibitem{16}
+Адаптация параллельного вычислительного алгоритма к архитектуре суперЭВМ на примере моделирования динамики плазмы методом частиц в ячейках [Электронный реусурс]. Режим доступа: https://lib.nsu.ru/xmlui/handle/nsu/13498
+
+\bibitem{17}
+Plasma Simulations by Example [Электронный ресурс]. Режим доступа: https://www.particleincell.com/plasma-by-example/
+
+\bibitem{18}
+СУПЕРКОМПЬЮТЕРЫ И ПАРАЛЛЕЛЬНАЯ ОБРАБОТКА
+ДАННЫХ [Электронный ресурс]. Режим доступа: https://teach-in.ru/file/synopsis/pdf/supercomputers-and-parallel-data-processing-M.pdf.
+
+\bibitem{19}
+Как сделать из Python-скрипта исполняемый файл [Электронный ресурс] Режим доступа: https://habr.com/ru/companies/slurm/articles/746622/
+
+\bibitem{20}
+Методология энергосберегающего моделирования и оптимизации для научных приложений [Электронный ресурс].
+Режим доступа: \href{https://www.semanticscholar.org/paper/E-AMOM\%3A-an-energy-aware-modeling-and-optimization-Lively-Taylor/fa10af546b3fd83df250f7d8ea5c53016c904af6}
+
+\bibitem{21}
+Оптимизация энергоэффективности на уровне алгоритма для процессорного элемента CPU-GPU в вычислениях SIMD/SPMD с интенсивным использованием данных [Электронный ресурс].
+Режим доступа: \href{https://www.researchgate.net/publication/220378904_Algorithm_level_power_efficiency_optimization_for_CPU-GPU_processing_element_in_data_intensive_SIMDSPMD_computing};
+
+\bibitem{22}
+Основы физики плазмы [Электронный ресурс]. Режим доступа: https://studfile.net/preview/376604/
+
+\bibitem{23}
+Концепция масштабирования производительности процессора [Электронный ресурс].
+Режим доступа: \href{https://www.kernel.org/doc/html/latest/admin-guide/pm/cpufreq.html};
+
+\bibitem{24}
+Понятие Супер ЭВМ [Электронный ресурс]. Режим доступа: http://db4.sbras.ru/elbib/data/show_page.phtml?77+658;
+
+\bibitem{25}
+Исследование энергии-времени, компромисс в программах MPI в кластере с масштабируемой мощностью [Электронный ресурс].
+Режим доступа: \href{https://dkl.cs.arizona.edu/publications/papers/ipdps05.pdf};
+
+\bibitem{26}
+Birdsall, C. K., A. B. Langdon, and R. B. Short. Plasma Physics via Computer Simulation. Taylor \& Francis, 2004.
+
+\bibitem{27}
+Hockney, R. W., and J. W. Eastwood. Computer Simulation Using Particles. CRC Press, 1988;
+
+\bibitem{28}
+Трехмерное моделирование плазмы методом частиц в
+ячейках на Intel Xeon Phi: оптимизация вычислений и примеры использования[Электронный ресурс]. Режим доступа: https://ceur-ws.org/Vol-1482/495.pdf;
+
+\bibitem{29}
+ТЕХНОЛОГИЯ РЕШЕНИЯ ЗАДАЧ ФИЗИКИ ПЛАЗМЫ НА СУПЕР-ЭВМ [Электронный ресурс]. Режим доступа: http://book.sarov.ru/wp-content/uploads/Supercomputing-16-2016-38.pdf;
+
+\bibitem{30}
+Григорьев Ю.Н., Вшивков В.А. Численные методы “частицы-в-ячейках”, Новосибирск: Наука 2000.
+
+\bibitem{31}
+Бедсел Ч., Лэнгдон Б. Физика плазмы и математическое моделирование. М: Мир, 1989.
+
+\bibitem{32}
+GPU Specs Database [Электронный ресурс]. Режим доступа: https://www.techpowerup.com/gpu-specs/
+
+\bibitem{33}
+Тесты производительности LINPACK [Электронный ресурс].
+Режим доступа: \href{https://ru.wikipedia.org/wiki/\%D0\%A2\%D0\%B5\%D1\%81\%D1\%82\%D1\%8B_\%D0\%BF\%D1\%80\%D0\%BE\%D0\%B8\%D0\%B7\%D0\%B2\%D0\%BE\%D0\%B4\%D0\%B8\%D1\%82\%D0\%B5\%D0\%BB\%D1\%8C\%D0\%BD\%D0\%BE\%D1\%81\%D1\%82\%D0\%B8_LINPACK};
+
+\bibitem{34}
+HPL: Оценка производительности Raspberry Pi [Электронный ресурс]. Режим доступа: \href{https://drach.pro/blog/linux/item/88-hpl-raspberry-pi-stress}
+
+\bibitem{35}
+High-Performance Linpack (HPL) benchmarking on UL HPC platform [Электронный ресурс]. Режим доступа: \href{https://ulhpc-tutorials.readthedocs.io/en/latest/parallel/mpi/HPL/}
+
+\bibitem{36}
+Кластерная архитектура [Электронный ресурс].
+   - Режим доступа: https://siblec.ru/telekommunikatsii/vychislitelnye-sistemy-seti-i-telekommunikatsii/5-arkhitektury-vysokoproizvoditelnykh-vychislitelnykh-sistem/5-6-klasternaya-arkhitektura;
+
+\bibitem{37}
+Параллельные системы [Электронный ресурс].
+   - Режим доступа: https://intuit.ru/studies/courses/92/92/lecture/28388?page=3;
+
+\bibitem{38}
+Состояние и перспективы развития вычислительных систем сверхвысокой производительности [Электронный ресурс].
+   - Режим доступа: http://www.botik.ru/PSI/RCMS/publications/publ-texts-2013/Abramov\_6\_22.pdf;
+
+\bibitem{39}
+Кластер высокопроизводительных вычислений Linux - кластер Беовульф [Электронный ресурс].
+   - Режим доступа: https://russianblogs.com/article/7542928214/;
+
+\bibitem{40}
+Thomas Sterling (computing) [Электронный ресурс].
+   - Режим доступа: https://en.m.wikipedia.org/wiki/Thomas\_Sterling\_(computing).
+
+\end{thebibliography}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
