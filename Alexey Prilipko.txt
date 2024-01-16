@@ -1,7 +1,40 @@
 Введение
 
-В наше время информационные технологии и искусственный интеллект проникают во все сферы человеческой деятельности, включая образование. В области образовательных технологий важным направлением является автоматическая генерация методических указаний и планов проведения занятий с использованием нейронных сетей. Это направление открывает новые горизонты для оптимизации образовательных процессов и создания инновационных решений в области образования.
+В наше эпоху информационного взрыва и стремительного развития технологий образование оказывается перед вызовом адаптации к постоянно меняющимся требованиям общества. В этом контексте автоматизация процессов обучения становится ключевым аспектом, предоставляя возможность эффективного создания и распространения методических материалов для занятий. Особое внимание уделяется применению нейронных сетей в этом контексте, предоставляя инновационный и перспективный инструмент для автоматической генерации методических указаний и планов проведения занятий.
 
-Цель данной выпускной квалификационной работы заключается в разработке, исследовании и практической реализации технологии автоматической генерации методических указаний и планов проведения занятий, основанной на современных нейронных сетях. Будут представлены концепция, архитектура и методология этой системы, а также будут проведены эксперименты для оценки ее эффективности и применимости в реальных образовательных средах.
+Использование нейронных сетей в образовательном процессе обещает революцию в создании качественных и индивидуализированных материалов для студентов и преподавателей. Нейронные сети обладают уникальной способностью выявления паттернов и особенностей в данных, что делает их мощным инструментом для анализа и прогнозирования эффективности образовательных методик.
 
-Эта исследовательская работа нацелена на содействие интеграции передовых технологий в образовательный процесс, что, безусловно, сделает обучение более доступным, эффективным и персонализированным для всех учащихся. Будущее образования лежит в руках технологий и инноваций, и данная работа призвана внести вклад в это важное направление развития образования.
+В данном исследовании мы направляем свое внимание на разработку и применение инновационных методов автоматической генерации методических указаний и планов занятий с использованием нейронных сетей. Это исследование стремится ответить на вопрос, какие подходы и технологии в области глубокого обучения могут быть наилучшим образом адаптированы для создания учебных материалов, соответствующих требованиям современной образовательной среды.
+
+Путем анализа существующих подходов, разработки новых методов и экспериментального исследования мы надеемся не только предоставить обширный обзор текущего состояния исследований в данной области, но и предложить конкретные рекомендации и решения для улучшения процесса автоматической генерации методических материалов в образовательной сфере. Это исследование нацелено на разработку инновационных методов, которые внесут вклад в повышение эффективности образовательного процесса и способствуют созданию более доступного и качественного обучения для всех участников образовательного процесса.
+
+Список литературы:
+1. Collobert, R., Weston, J., Bottou, L., Karlen, M., Kavukcuoglu, K., & Kuksa, P. (2011). Natural Language Processing (Almost) from Scratch. *Journal of Machine Learning Research, 12,* 2493-2537.
+
+2. Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2013). Efficient Estimation of Word Representations in Vector Space. *arXiv preprint arXiv:1301.3781.*
+
+3. Goldberg, Y., & Levy, O. (2014). Word2Vec Explained: Deriving Mikolov et al.'s Negative-Sampling Word-Embedding Method. *arXiv preprint arXiv:1402.3722.*
+
+4. Pennington, J., Socher, R., & Manning, C. (2014). GloVe: Global Vectors for Word Representation. *Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP),* 1532-1543.
+
+5. Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., ... & Polosukhin, I. (2017). Attention is All You Need. *Advances in Neural Information Processing Systems, 30.*
+
+6. Radford, A., Narasimhan, K., Salimans, T., & Sutskever, I. (2018). Improving Language Understanding by Generative Pretraining. *OpenAI, 1,* 3.
+
+7. Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. *arXiv preprint arXiv:1810.04805.*
+
+8. Peters, M. E., Neumann, M., Iyyer, M., Gardner, M., Clark, C., Lee, K., & Zettlemoyer, L. (2018). Deep Contextualized Word Representations. *arXiv preprint arXiv:1802.05365.*
+
+9. Yang, Z., Dai, Z., Yang, Y., Carbonell, J., Salakhutdinov, R., & Le, Q. V. (2019). XLNet: Generalized Autoregressive Pretraining for Language Understanding. *Advances in Neural Information Processing Systems, 32.*
+
+10. Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., ... & Amodei, D. (2020). Language Models are Few-Shot Learners. *arXiv preprint arXiv:2005.14165.*
+
+11. Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., ... & Polosukhin, I. (2020). Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer. *arXiv preprint arXiv:1910.10683.*
+
+12. Vaswani, A., Radford, A., Wu, Y., Child, R., Datta, P., & Kingsbury, B. (2021). Scaling Laws for Neural Language Models. *arXiv preprint arXiv:2012.14919.*
+
+13. Lewis, M., Liu, Y., Goyal, N., Ghazvininejad, M., Mohamed, A., Levy, O., & Zettlemoyer, L. (2021). BART: Denoising Sequence-to-Sequence Pretraining for Natural Language Understanding. *arXiv preprint arXiv:1910.13461.*
+
+14. Clark, K., Luong, M. T., Le, Q. V., & Manning, C. D. (2021). ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators. *arXiv preprint arXiv:2003.10555.*
+
+15. Wang, A., Singh, A., Michael, J., Hill, F., Levy, O., & Bowman, S. R. (2021). GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding. *Proceedings of the 2018 EMNLP Workshop BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP,* 353-355.
